@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B2D955CB1AEDA8DE008973CF /* iOSMVPArchitecture.h in Headers */ = {isa = PBXBuildFile; fileRef = B2D955CA1AEDA8DE008973CF /* iOSMVPArchitecture.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B2D955D11AEDA8DE008973CF /* iOSMVPArchitecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2D955C51AEDA8DE008973CF /* iOSMVPArchitecture.framework */; };
 		B2D955D81AEDA8DE008973CF /* iOSMVPArchitectureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D955D71AEDA8DE008973CF /* iOSMVPArchitectureTests.m */; };
+		B2D955E91AEDA8F9008973CF /* AbstractEventer.h in Headers */ = {isa = PBXBuildFile; fileRef = B2D955E21AEDA8F9008973CF /* AbstractEventer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2D955EA1AEDA8F9008973CF /* AbstractEventer.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D955E31AEDA8F9008973CF /* AbstractEventer.m */; };
+		B2D955EB1AEDA8F9008973CF /* AbstractPresenter.h in Headers */ = {isa = PBXBuildFile; fileRef = B2D955E41AEDA8F9008973CF /* AbstractPresenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2D955EC1AEDA8F9008973CF /* AbstractPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D955E51AEDA8F9008973CF /* AbstractPresenter.m */; };
+		B2D955ED1AEDA8F9008973CF /* ChangeEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = B2D955E61AEDA8F9008973CF /* ChangeEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2D955EE1AEDA8F9008973CF /* ChangeEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D955E71AEDA8F9008973CF /* ChangeEvent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,10 +30,15 @@
 /* Begin PBXFileReference section */
 		B2D955C51AEDA8DE008973CF /* iOSMVPArchitecture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iOSMVPArchitecture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2D955C91AEDA8DE008973CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B2D955CA1AEDA8DE008973CF /* iOSMVPArchitecture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSMVPArchitecture.h; sourceTree = "<group>"; };
 		B2D955D01AEDA8DE008973CF /* iOSMVPArchitectureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSMVPArchitectureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2D955D61AEDA8DE008973CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2D955D71AEDA8DE008973CF /* iOSMVPArchitectureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSMVPArchitectureTests.m; sourceTree = "<group>"; };
+		B2D955E21AEDA8F9008973CF /* AbstractEventer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractEventer.h; sourceTree = "<group>"; };
+		B2D955E31AEDA8F9008973CF /* AbstractEventer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractEventer.m; sourceTree = "<group>"; };
+		B2D955E41AEDA8F9008973CF /* AbstractPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractPresenter.h; sourceTree = "<group>"; };
+		B2D955E51AEDA8F9008973CF /* AbstractPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractPresenter.m; sourceTree = "<group>"; };
+		B2D955E61AEDA8F9008973CF /* ChangeEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeEvent.h; sourceTree = "<group>"; };
+		B2D955E71AEDA8F9008973CF /* ChangeEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeEvent.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +81,7 @@
 		B2D955C71AEDA8DE008973CF /* iOSMVPArchitecture */ = {
 			isa = PBXGroup;
 			children = (
-				B2D955CA1AEDA8DE008973CF /* iOSMVPArchitecture.h */,
+				B2D955E11AEDA8F9008973CF /* MVP */,
 				B2D955C81AEDA8DE008973CF /* Supporting Files */,
 			);
 			path = iOSMVPArchitecture;
@@ -102,6 +112,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B2D955E11AEDA8F9008973CF /* MVP */ = {
+			isa = PBXGroup;
+			children = (
+				B2D955E21AEDA8F9008973CF /* AbstractEventer.h */,
+				B2D955E31AEDA8F9008973CF /* AbstractEventer.m */,
+				B2D955E41AEDA8F9008973CF /* AbstractPresenter.h */,
+				B2D955E51AEDA8F9008973CF /* AbstractPresenter.m */,
+				B2D955E61AEDA8F9008973CF /* ChangeEvent.h */,
+				B2D955E71AEDA8F9008973CF /* ChangeEvent.m */,
+			);
+			path = MVP;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -109,7 +132,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2D955CB1AEDA8DE008973CF /* iOSMVPArchitecture.h in Headers */,
+				B2D955E91AEDA8F9008973CF /* AbstractEventer.h in Headers */,
+				B2D955EB1AEDA8F9008973CF /* AbstractPresenter.h in Headers */,
+				B2D955ED1AEDA8F9008973CF /* ChangeEvent.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +234,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2D955EC1AEDA8F9008973CF /* AbstractPresenter.m in Sources */,
+				B2D955EA1AEDA8F9008973CF /* AbstractEventer.m in Sources */,
+				B2D955EE1AEDA8F9008973CF /* ChangeEvent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +357,10 @@
 				INFOPLIST_FILE = iOSMVPArchitecture/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -344,6 +376,10 @@
 				INFOPLIST_FILE = iOSMVPArchitecture/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -398,6 +434,7 @@
 				B2D955DD1AEDA8DE008973CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B2D955DE1AEDA8DE008973CF /* Build configuration list for PBXNativeTarget "iOSMVPArchitectureTests" */ = {
 			isa = XCConfigurationList;
@@ -406,6 +443,7 @@
 				B2D955E01AEDA8DE008973CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
